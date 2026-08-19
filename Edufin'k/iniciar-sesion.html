@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edufin'k | Iniciar sesión</title>
+
+    <link rel="stylesheet" href="diseño.css">
+
+</head>
+
+
+<body class="pagina-login">
+
+
+    <!-- ==========================================
+         ENCABEZADO
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="contenedor header-contenido">
+
+
+            <!-- LOGO -->
+
+            <a href="Edufin'k.html" class="logo">
+
+                <img
+                    src="img/logo.png"
+                    alt="Logo de Edufin'k"
+                >
+
+            </a>
+
+
+            <!-- MENÚ -->
+
+            <nav class="menu">
+
+                <a href="Edufin'k.html">
+                    Inicio
+                </a>
+
+                <a href="Edufin'k.html#que-hacemos">
+                    ¿Qué hacemos?
+                </a>
+
+                <a href="servicios.html">
+                    Servicios
+                </a>
+
+                <a href="cursos.html">
+                    Cursos
+                </a>
+
+                <a href="nosotros.html">
+                    Nosotros
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <!-- BOTÓN -->
+
+            <a
+                href="iniciar-sesion.html"
+                class="boton-contacto"
+            >
+
+                Iniciar sesión
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTENIDO LOGIN
+    =========================================== -->
+
+    <main class="login-contenido">
+
+        <div class="login-caja">
+
+
+            <!-- LADO IZQUIERDO -->
+
+            <div class="login-presentacion">
+
+                <p class="texto-pequeno">
+                    EDUFIN'K
+                </p>
+
+                <h1>
+                    Aprende,
+                    analiza y
+                    crece.
+                </h1>
+
+                <p>
+                    Accede a tus cursos, consulta tus avances
+                    y continúa aprendiendo sobre educación
+                    financiera.
+                </p>
+
+
+                <div class="login-imagen">
+
+                    <img
+                        src="img/iniciar-sesion.png"
+                        alt="Educación financiera"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LADO DERECHO -->
+
+            <div class="login-formulario">
+
+                <div class="login-titulo">
+
+                    <h2>
+                        Iniciar sesión
+                    </h2>
+
+                    <p>
+                        Ingresa a tu cuenta para continuar.
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+                <form
+                    action="Edufin'k.html"
+                    method="post"
+                    onsubmit="return iniciarSesion(event)"
+                >
+
+
+                    <!-- CORREO -->
+
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="Ingresa tu correo"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div class="campo">
+
+                        <label for="contrasena">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Ingresa tu contraseña"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- OPCIONES -->
+
+                    <div class="login-opciones">
+
+                        <label class="recordarme">
+
+                            <input
+                                type="checkbox"
+                                name="recordarme"
+                            >
+
+                            <span>
+                                Recordarme
+                            </span>
+
+                        </label>
+
+
+                        <a href="#">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+
+                    </div>
+
+
+                    <!-- BOTÓN -->
+
+                    <button
+                        type="submit"
+                        class="boton-login"
+                    >
+
+                        Iniciar sesión
+
+                        <span>→</span>
+
+                    </button>
+
+
+                    <!-- MENSAJE -->
+
+                    <p
+                        id="mensaje-login"
+                        class="mensaje-login"
+                    ></p>
+
+                </form>
+
+
+                <!-- REGISTRO -->
+
+                <div class="crear-cuenta">
+
+                    <p>
+                        ¿Aún no tienes una cuenta?
+                    </p>
+
+                    <a href="registro.html">
+                        Crear una cuenta
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-inferior">
+
+            <div class="contenedor footer-inferior-contenido">
+
+                <p>
+                    © 2026 Edufin'k. Todos los derechos reservados.
+                </p>
+
+
+                <div class="redes-sociales">
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        
+                    </a>
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
